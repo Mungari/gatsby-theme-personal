@@ -11,12 +11,14 @@ export const ProjectType = {
   status: string,
   tags: arrayOf(string),
   url: string,
+  type: oneOf(["work", "personal"]),
 }
 
 export const query = graphql`
   fragment ProjectFragment on ProjectsYaml {
     description
     icon
+    type
     image {
       childImageSharp {
         gatsbyImageData(width: 640, quality: 85)

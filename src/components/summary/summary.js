@@ -24,19 +24,6 @@ const Summary = ({ profile }) => (
       </h5>
       <div className="font-header font-light text-2xl text-front leading-tight">
         {profile.focus}
-        {profile.focus_url && (
-          <div>
-            <a
-              aria-label="website"
-              className="inline-block text-front opacity-50 hover:opacity-75 h-4 w-4 transition-opacity duration-150"
-              href={profile.focus_url}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <FaCompass />
-            </a>
-          </div>
-        )}
       </div>
     </div>
   </div>

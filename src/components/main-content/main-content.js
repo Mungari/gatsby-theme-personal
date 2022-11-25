@@ -1,6 +1,5 @@
 import React from "react"
 import About from "../about/about"
-import ContactForm from "../contact-form/contact-form"
 import Projects from "../projects/projects"
 import Skills from "../skills/skills"
 import Summary from "../summary/summary"
@@ -24,10 +23,6 @@ const MainContent = ({ formspreeEndpoint, history, projects, profile }) => {
       {profile.about && <About about={profile.about} />}
       <Projects projects={projects} />
       <WorkHistory history={history} />
-      <ContactForm
-        formspreeEndpoint={formspreeEndpoint}
-        budget={profile.budget}
-      />
     </main>
   )
 }

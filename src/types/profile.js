@@ -29,15 +29,8 @@ export const ProfileType = {
 export const query = graphql`
   fragment ProfileFragment on ProfileYaml {
     about
-    budget {
-      currency
-      default
-      max
-      min
-    }
     company
     focus
-    focus_url
     for_hire
     image {
       childImageSharp {
