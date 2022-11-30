@@ -24,10 +24,12 @@ export const ProfileType = {
   relocation: bool.isRequired,
   skills: arrayOf(string).isRequired,
   tools: arrayOf(string).isRequired,
+  contact: string.isRequired,
 }
 
 export const query = graphql`
   fragment ProfileFragment on ProfileYaml {
+    contact
     about
     company
     focus
